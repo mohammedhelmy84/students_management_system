@@ -17,7 +17,7 @@
                 <a href="{{url('/teachers')}}" class="sidebar-link"><span>المعلمون</span><i class="las la-chalkboard-teacher"></i></a>
             </li><!--/sidebae-item-->
             <li class="sidebar-item">
-                <a href="#" class="sidebar-link"><span>المقررات</span><i class="las la-book-open"></i></a>
+                <a href="{{url('/courses')}}" class="sidebar-link"><span>المقررات</span><i class="las la-book-open"></i></a>
             </li><!--/sidebae-item-->
             <li class="sidebar-item">
                 <a href="#" class="sidebar-link"><span>التسجيل</span><i class="las la-user-check"></i></a>
