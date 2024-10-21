@@ -1,4 +1,5 @@
 
+@yield('scripts')
 @include('includes.header')
     <div class="wrapper">
 

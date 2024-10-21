@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
+:root {
+    --primary: #0d6efd;
+  }
+
 ::after,
 ::before {
     box-sizing: border-box;
@@ -40,7 +44,7 @@ body {
     min-width: 70px;
     z-index: 1000;
     transition: all 0.25s ease-in-out;
-    background-color:  #293b5f;
+    background-color: var(--primary);
     display: flex;
     flex-direction: column;
     right: 0 !important;
@@ -282,5 +286,9 @@ footer{
 
     .table1{
         width:90% !important;
+    }
+
+    #submitBtn:disabled {
+        cursor: not-allowed;
     }
 }
