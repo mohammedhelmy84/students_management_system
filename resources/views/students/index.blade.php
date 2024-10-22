@@ -8,8 +8,8 @@
                         <h2>نظام إدارة الطلاب</h2>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title"> >> صفحة التلاميذ</h5>
-                        <a href="{{route('students.create')}}" class="btn btn-info btn-sm">+ إضافة طالب جديد</a>
+                        <h5 class="card-title"> >> صفحة الطلاب</h5>
+                        <a href="{{route('students.create')}}" class="btn btn-primary btn-sm">+ إضافة طالب جديد</a>
                         <div class="table-responsive">
                             <table class="table table-striped">
                                 <thead>
@@ -28,7 +28,15 @@
                                         <td>{{$student->name}}</td>
                                         <td>{{$student->address}}</td>
                                         <td>{{$student->mobile}}</td>
-                                        <td>تعديل</td>
+                                        <td>
+                                            <a href="{{url('/students/'.$student->id)}}" title="عرض الطالب" class="btn btn-primary btn-sm">عرض</a>
+                                            <a href="{{url('/students/'.$student->id.'/edit')}}" title="تعديل الطالب" class="btn btn-primary btn-sm">تعديل</a>
+                                            <form method="POST" action="{{ url('/students' . '/' . $student->id) }}" accept-charset="UTF-8" style="display:inline">
+                                                {{ method_field('DELETE') }}
+                                                {{ csrf_field() }}
+                                                <button type="submit" class="btn btn-primary btn-sm" title="حذف الطالب" onclick="return confirm(&quot;هل أنت متأكد من حذف الطالب؟&quot;)"><i class="fa fa-trash-o" aria-hidden="true"></i> حذف</button>
+                                            </form>
+                                        </td>
                                     </tr>
                                     @endforeach
                                 </tbody>
