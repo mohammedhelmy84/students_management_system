@@ -23,7 +23,7 @@
                 <a href="{{url('/enrollments')}}" class="sidebar-link"><span>التسجيل</span><i class="las la-user-check"></i></a>
             </li>
             <li class="sidebar-item">
-                <a href="#" class="sidebar-link"><span>الدفع</span><i class="las la-file-invoice-dollar"></i></a>
+                <a href="{{url('/payments')}}" class="sidebar-link"><span>الدفع</span><i class="las la-file-invoice-dollar"></i></a>
             </li>
             <li class="sidebar-item">
             <a href="#" class="sidebar-link"><span>خروج</span><i class="las la-sign-out-alt"></i></a>
