@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Response;
 use Illuminate\View\View;
-use App\Models\Stuent;
+use App\Models\Student;
 use stdClass;
 
 class StudentController extends Controller
@@ -16,7 +16,7 @@ class StudentController extends Controller
      */
     public function index()
     {
-        $students = Stuent::all();
+        $students = Student::all();
         return view('students.index')->with('students', $students);
 
     }
