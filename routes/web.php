@@ -4,6 +4,7 @@ use App\Http\Controllers\StudentController;
 use App\Http\Controllers\TeacherController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\EnrollmentController;
+use App\Http\Controllers\PaymentController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -29,3 +30,4 @@ Route::get('teachers/create', [TeacherController::class,'create'])->name('teache
 Route::resource('courses', CourseController::class);
 Route::get('courses/create', [CourseController::class,'create'])->name('courses.create');
 Route::resource('enrollments', EnrollmentController::class);
+Route::resource('payments', PaymentController::class);
