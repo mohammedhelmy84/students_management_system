@@ -5,6 +5,7 @@ use App\Http\Controllers\TeacherController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\EnrollmentController;
 use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\ReportController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -31,3 +32,4 @@ Route::resource('courses', CourseController::class);
 Route::get('courses/create', [CourseController::class,'create'])->name('courses.create');
 Route::resource('enrollments', EnrollmentController::class);
 Route::resource('payments', PaymentController::class);
+Route::get('report/report1/{pid}', [ReportController::class,'report1']);
