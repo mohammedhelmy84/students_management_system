@@ -37,6 +37,11 @@
                                                 {{ csrf_field() }}
                                                 <button type="submit" class="btn btn-primary btn-sm" title="حذف العملية الدفع" onclick="return confirm(&quot;هل أنت متأكد من حذف العملية الدفع؟&quot;)"><i class="fa fa-trash-o" aria-hidden="true"></i> حذف</button>
                                             </form>
+                                            <a href="{{url('/report/report1/'.$payment->id)}}" title="تعديل الدفع" >
+                                                <button type="submit" class="btn btn-primary btn-sm"  >
+                                                    <i class="fa fa-print" aria-hidden="true">طباعه</i>
+                                                    </button>
+                                            </a>
                                         </td>
                                     </tr>
                                     @endforeach
