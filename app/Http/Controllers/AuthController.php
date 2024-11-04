@@ -6,6 +6,7 @@ use App\Models\User;
 use Exception;
 use Illuminate\Auth\Events\Validated;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
@@ -51,11 +52,23 @@ class AuthController extends Controller
         }
     }
 
-    public function login(){
+    public function login()
+    {
         return view('auth.login');
     }
 
-    public function login_request(Request $request){
-        return $request;
+    public function login_request(Request $request)
+    {
+        $credentials = [
+            'email' => $request->email,
+            'password' => $request->password
+        ];
+
+        if (Auth::attempt($credentials)) {
+            return redirect('/students')->with('success', 'تم تسجيل الدخول بنجاح');
+        }
+
+        return redirect()->route('auth.login')->with('error', 'تأكد من بيانات الدخول');
+
     }
 }
