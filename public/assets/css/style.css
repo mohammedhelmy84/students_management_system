@@ -243,7 +243,7 @@ footer{
 
 @media (max-width:768px){
     .main{
-        background-color: #71c664;
+        padding-right: 10px !important;
     }
     .navbar form{
         max-width: 320px;
