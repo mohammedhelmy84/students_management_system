@@ -3,6 +3,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\TeacherController;
 use App\Http\Controllers\CourseController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\EnrollmentController;
 use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\ReportController;
@@ -23,7 +24,7 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('auth.login');
 // })->name('auth.login');
-
+Route::get('/dashboard', [DashboardController::class,'index']);
 Route::resource('students', StudentController::class);
 Route::get('students/create', [StudentController::class,'create'])->name('students.create');
 Route::resource('teachers', TeacherController::class);
