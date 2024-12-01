@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 :root {
-    --primary: #0d6efd;
+    --primary: darkblue;
   }
 
 ::after,
@@ -150,7 +150,7 @@ a.sidebar-link:hover{
     position: absolute;
     top: 0;
     left: 70px;
-    background-color: #0e2238;
+    background-color: darkblue;
     padding: 0;
     min-width: 15rem;
     display: none;
@@ -209,7 +209,7 @@ a.sidebar-link:hover{
 }
 
 .maincard:hover{
-    background-color: #293b5f;
+    background-color: darkblue;
     color: #fff;
     transform: translateY(-10.5px);
 }
@@ -228,7 +228,7 @@ a.sidebar-link:hover{
 }
 
 .table1 tr.highlight th{
-    background-color: #293b5f;
+    background-color: darkblue;
     color:#fff;
 }
 

@@ -11,7 +11,7 @@
                         <i class="las la-cog"></i>
                         <span>الإعدادت</span>
                     </a>
-                    <a href="#" class="dropdown-item">
+                    <a href="{{route('auth.login')}}" style="text-decoration: none;" class="dropdown-item">
                         <i class="las la-question-circle"></i>
                         <span>تسجيل الخروج</span>
                     </a>

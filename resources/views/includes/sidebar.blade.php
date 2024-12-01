@@ -8,7 +8,7 @@
         </div> -->
         <ul class="sidebar-nav mt-5">
             <li class="sidebar-item">
-                <a href="{{url('/')}}" class="sidebar-link"><span>الرئيسية</span><i class="las la-home"></i></a>
+                <a href="{{url('/dashboard')}}" class="sidebar-link"><span>الرئيسية</span><i class="las la-home"></i></a>
             </li>
             <li class="sidebar-item">
                 <a href="{{url('/students')}}" class="sidebar-link"><span>الطلاب</span><i class="las la-user-circle"></i></a>

@@ -22,27 +22,27 @@
 <body>
     <div class="container" dir="rtl">
       <div class="row text-center">
-        <h3 class="mt-5">البرنامج الإلكتروني لإدارة الطلاب</h3>
+        <h3 class="mt-5" style="color:darkblue; font-weight:bold;">البرنامج الإلكتروني لإدارة الطلاب</h3>
       </div>
         <div class="row mt-5 py-2">
             <form action="{{ route('login') }}" method="POST">
                 @csrf
                 <div class="input-group flex-nowrap my-2">
                     <span class="input-group-text" id="addon-wrapping"
-                        style="border-radius:5px !important;  width:110px !important; background-color:hotpink; color:white; font-weight:bold;">البريد
-                        الالكتروني</span>
+                        style="border-radius:5px !important;  width:125px !important; background-color:hotpink; color:white; font-weight:bold;"><i class="las la-at">البريد الإلكتروني</i>
+                        </span>
                     <input type="text" name="email" class="form-control" style="border-radius:5px !important;"
                         placeholder="البريد الالكتروني" aria-label="Username" aria-describedby="addon-wrapping">
                 </div>
                 <div class="input-group flex-nowrap my-2">
                     <span class="input-group-text" id="addon-wrapping"
-                        style="border-radius:5px !important;  width:110px !important; background-color:hotpink; color:white; font-weight:bold;">كلمة
-                        السر</span>
-                    <input type="text" name="password" class="form-control" style="border-radius:5px !important;"
+                        style="border-radius:5px !important;  width:125px !important; background-color:hotpink; color:white; font-weight:bold;"><i class="las la-lock"></i>كلمة السر
+                        </span>
+                    <input type="password" name="password" class="form-control" style="border-radius:5px !important;"
                         placeholder="كلمة السر" aria-label="Username" aria-describedby="addon-wrapping">
                 </div>
                 <div class="input-group flex-nowrap my-2">
-                    <input type="submit" class="btn btn-success mx-auto" value="دخول" aria-label="Username"
+                    <input type="submit" class="btn btn-success mx-auto" style="background-color: darkblue !important; width:100px !important;" value="دخول" aria-label="Username"
                         aria-describedby="addon-wrapping" style="border-radius:5px !important;  width:110px !important;">
                 </div>
             </form>

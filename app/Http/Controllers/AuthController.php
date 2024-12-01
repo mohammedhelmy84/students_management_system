@@ -65,7 +65,7 @@ class AuthController extends Controller
         ];
 
         if (Auth::attempt($credentials)) {
-            return redirect('/students')->with('success', 'تم تسجيل الدخول بنجاح');
+            return redirect('/dashboard')->with('success', 'تم تسجيل الدخول بنجاح');
         }
 
         return redirect()->route('auth.login')->with('error', 'تأكد من بيانات الدخول');
