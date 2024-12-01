@@ -24,8 +24,8 @@ class AuthController extends Controller
         $this->validate($request, [
             'name' => 'required|max:255',
             'email' => 'required|unique:users',
-            'password' => 'required|confirmed|min:8',
-            'confirm_password' => 'required|min:8',
+            'password' => 'required|same:confirm_password|min:8',
+            'confirm_password' => 'required',
         ], [
             'name.required' => 'حقل الاسم مطلوب',
             'email.required' => 'حقل الايميل مطلوب',
@@ -34,9 +34,10 @@ class AuthController extends Controller
             'name.max' => 'طول حقل الاسم 255',
             'email.unique' => 'غير مسموح بتكرار الايميل',
             'password.min' => 'طول حقل الباسورد 8 فأكثر',
-            'password.confirmed' => 'كلمة السر غير متطابقة',
+            'password.same' => 'كلمة السر غير متطابقة',
             'confirm_password.min' => 'طول حقل تأكيد الباسورد 8 فأكثر',
         ]);
+
         try {
             $user = new User();
             $user->name = $request->name;
