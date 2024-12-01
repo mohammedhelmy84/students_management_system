@@ -19,7 +19,7 @@
             </li>
             <li class="nav-item dropdown">
                 <a href="#" class="btn btn-link" data-bs-toggle="dropdown">
-                    <span>{{Auth::user()->name}}</span>
+                    <span>{{Auth::user()?->name}}</span>
                 </a>
             </li>
         </ul>

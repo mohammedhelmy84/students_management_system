@@ -42,14 +42,14 @@
                     <span class="input-group-text" id="addon-wrapping"
                         style="border-radius:5px !important;  width:110px !important; background-color:hotpink; color:white; font-weight:bold;">كلمة
                         السر</span>
-                    <input type="text" name="password" class="form-control" style="border-radius:5px !important;"
+                    <input type="password" name="password" class="form-control" style="border-radius:5px !important;"
                         placeholder="كلمة السر" aria-label="Username" aria-describedby="addon-wrapping">
                 </div>
                 <div class="input-group flex-nowrap my-2">
                     <span class="input-group-text" id="addon-wrapping"
                         style="border-radius:5px !important;  width:110px !important; background-color:hotpink; color:white; font-weight:bold;">تأكيد
                         كلمة السر</span>
-                    <input type="text" name="confirm_password" class="form-control" style="border-radius:5px !important;"
+                    <input type="password" name="confirm_password" class="form-control" style="border-radius:5px !important;"
                         placeholder="تأكيد كلمة السر" aria-label="Username" aria-describedby="addon-wrapping">
                 </div>
                 <div class="input-group flex-nowrap my-2">
